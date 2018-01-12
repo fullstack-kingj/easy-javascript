@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Software\\nodejs\\node.exe',
+1 verbose cli   'C:\\Software\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'node-inspector' ]
+2 info using npm@3.7.3
+3 info using node@v5.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData node-inspector
+8 silly fetchNamedPackageData node-inspector
+9 silly mapToRegistry name node-inspector
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node-inspector
+13 verbose request uri https://registry.npmjs.org/node-inspector
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 08:31:28
+16 verbose request id 10316388ff7eb889
+17 http request GET https://registry.npmjs.org/node-inspector
+18 info retry will retry, error on last attempt: Error: read ECONNRESET
+19 info attempt registry request try #2 at 08:32:32
+20 http request GET https://registry.npmjs.org/node-inspector
+21 info retry will retry, error on last attempt: Error: read ECONNRESET
+22 info attempt registry request try #3 at 08:34:15
+23 http request GET https://registry.npmjs.org/node-inspector
+24 silly fetchPackageMetaData Error: read ECONNRESET
+24 silly fetchPackageMetaData     at exports._errnoException (util.js:890:11)
+24 silly fetchPackageMetaData     at TLSWrap.onread (net.js:552:26)
+24 silly fetchPackageMetaData  error for node-inspector { [Error: read ECONNRESET] code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: read ECONNRESET
+30 verbose stack     at exports._errnoException (util.js:890:11)
+30 verbose stack     at TLSWrap.onread (net.js:552:26)
+31 verbose cwd D:\WORK\01 WEB课件\01 JavaScript基础\SRC\01_初探JavaScript
+32 error Windows_NT 6.1.7601
+33 error argv "C:\\Software\\nodejs\\node.exe" "C:\\Software\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "node-inspector"
+34 error node v5.9.1
+35 error npm  v3.7.3
+36 error code ECONNRESET
+37 error errno ECONNRESET
+38 error syscall read
+39 error network read ECONNRESET
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
