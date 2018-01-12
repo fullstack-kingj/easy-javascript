@@ -1,0 +1,948 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第二节 原始类型 · EASYJAVASCRIPT - 可能是最适合你的 JavaScript 课程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="全栈讲师-金云龙">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wrapper-type.html" />
+    
+    
+    <link rel="prev" href="data-type.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"jyl","repo":"easy-javascript","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.longestory.com" target="_blank" class="custom-link">作者的博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../JavaScript是什么.md">
+            
+                <span>
+            
+                    
+                    第一章 JavaScript 是什么
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/javascript-summary.html">
+            
+                <a href="../chapter1/javascript-summary.html">
+            
+                    
+                    第一节 JavaScript 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/runtime-environment.html">
+            
+                <a href="../chapter1/runtime-environment.html">
+            
+                    
+                    第二节 运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/code-debug.html">
+            
+                <a href="../chapter1/code-debug.html">
+            
+                    
+                    第三节 代码调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../基础语法.md">
+            
+                <span>
+            
+                    
+                    第二章 基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/grammar.html">
+            
+                <a href="../chapter2/grammar.html">
+            
+                    
+                    第一节 语法入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/keywords.html">
+            
+                <a href="../chapter2/keywords.html">
+            
+                    
+                    第二节 关键字与保留字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../变量与常量.md">
+            
+                <span>
+            
+                    
+                    第三章 变量与常量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/variable.html">
+            
+                <a href="../chapter3/variable.html">
+            
+                    
+                    第一节 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/constant.html">
+            
+                <a href="../chapter3/constant.html">
+            
+                    
+                    第二节 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../数据类型.md">
+            
+                <span>
+            
+                    
+                    第四章 数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="data-type.html">
+            
+                <a href="data-type.html">
+            
+                    
+                    第一节 什么是数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="primitive-type.html">
+            
+                <a href="primitive-type.html">
+            
+                    
+                    第二节 原始类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="wrapper-type.html">
+            
+                <a href="wrapper-type.html">
+            
+                    
+                    第三节 包装类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="type-conversion.html">
+            
+                <a href="type-conversion.html">
+            
+                    
+                    第四节 类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../运算符.md">
+            
+                <span>
+            
+                    
+                    第五章 运算符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chapter5/operator-summary.html">
+            
+                <a href="../chapter5/operator-summary.html">
+            
+                    
+                    第一节 什么是运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../chapter5/arithmetic-operator.html">
+            
+                <a href="../chapter5/arithmetic-operator.html">
+            
+                    
+                    第二节 算数运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../chapter5/comparison-operator.html">
+            
+                <a href="../chapter5/comparison-operator.html">
+            
+                    
+                    第三节 比较运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../chapter5/logical-operator.html">
+            
+                <a href="../chapter5/logical-operator.html">
+            
+                    
+                    第四节 逻辑运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../chapter5/bitwise-operator.html">
+            
+                <a href="../chapter5/bitwise-operator.html">
+            
+                    
+                    第五节 按位运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../chapter5/assign-operator.html">
+            
+                <a href="../chapter5/assign-operator.html">
+            
+                    
+                    第六节 赋值运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../chapter5/string-concatenation-operator.html">
+            
+                <a href="../chapter5/string-concatenation-operator.html">
+            
+                    
+                    第七节 字符串连接运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../chapter5/conditional-operator.html">
+            
+                <a href="../chapter5/conditional-operator.html">
+            
+                    
+                    第八节 条件运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../语句.md">
+            
+                <span>
+            
+                    
+                    第六章 语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chapter6/statement-summary.html">
+            
+                <a href="../chapter6/statement-summary.html">
+            
+                    
+                    第一节 什么是语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../chapter6/conditional-statement.html">
+            
+                <a href="../chapter6/conditional-statement.html">
+            
+                    
+                    第二节 条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../chapter6/loop-conditional.html">
+            
+                <a href="../chapter6/loop-conditional.html">
+            
+                    
+                    第三节 循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../chapter6/goto-conditional.html">
+            
+                <a href="../chapter6/goto-conditional.html">
+            
+                    
+                    第四节 跳转语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../数组.md">
+            
+                <span>
+            
+                    
+                    第七章 数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chapter7/array-summary.html">
+            
+                <a href="../chapter7/array-summary.html">
+            
+                    
+                    第一节 什么是数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../chapter7/one-dimensional-array.html">
+            
+                <a href="../chapter7/one-dimensional-array.html">
+            
+                    
+                    第二节 一维数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../chapter7/two-dimensional-array.html">
+            
+                <a href="../chapter7/two-dimensional-array.html">
+            
+                    
+                    第三节 二维数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../函数.md">
+            
+                <span>
+            
+                    
+                    第八章 函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chapter8/function-summary.html">
+            
+                <a href="../chapter8/function-summary.html">
+            
+                    
+                    第一节 什么是函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chapter8/function.html">
+            
+                <a href="../chapter8/function.html">
+            
+                    
+                    第二节 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../chapter8/predefined-function.html">
+            
+                <a href="../chapter8/predefined-function.html">
+            
+                    
+                    第三节 预定义函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../作用域.md">
+            
+                <span>
+            
+                    
+                    第九章 作用域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter9/scope-summary.html">
+            
+                <a href="../chapter9/scope-summary.html">
+            
+                    
+                    第一节 什么是作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter9/variable-scope.html">
+            
+                <a href="../chapter9/variable-scope.html">
+            
+                    
+                    第二节 变量作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter9/function-scope.html">
+            
+                <a href="../chapter9/function-scope.html">
+            
+                    
+                    第三节 函数作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../对象.md">
+            
+                <span>
+            
+                    
+                    第十章 对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter10/object-summary.html">
+            
+                <a href="../chapter10/object-summary.html">
+            
+                    
+                    第一节 什么是对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter10/object-object.html">
+            
+                <a href="../chapter10/object-object.html">
+            
+                    
+                    第二节 Object 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter10/create-object.html">
+            
+                <a href="../chapter10/create-object.html">
+            
+                    
+                    第三节 创建对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/attribute-of-object.html">
+            
+                <a href="../chapter10/attribute-of-object.html">
+            
+                    
+                    第四节 对象的属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/function-of-object.html">
+            
+                <a href="../chapter10/function-of-object.html">
+            
+                    
+                    第五节 对象的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二节 原始类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E8C;&#x8282;-&#x539F;&#x59CB;&#x7C7B;&#x578B;">&#x7B2C;&#x4E8C;&#x8282; &#x539F;&#x59CB;&#x7C7B;&#x578B;</h1>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; www.longestory.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-11 21:26:16
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="data-type.html" class="navigation navigation-prev " aria-label="Previous page: 第一节 什么是数据类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wrapper-type.html" class="navigation navigation-next " aria-label="Next page: 第三节 包装类型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二节 原始类型","level":"1.5.2","depth":2,"next":{"title":"第三节 包装类型","level":"1.5.3","depth":2,"path":"chapter4/wrapper-type.md","ref":"chapter4/wrapper-type.md","articles":[]},"previous":{"title":"第一节 什么是数据类型","level":"1.5.1","depth":2,"path":"chapter4/data-type.md","ref":"chapter4/data-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","github","github-buttons","-sharing","sharing-plus","tbfed-pagefooter","expandable-chapters-small","donate","github-issue-feedback"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy www.longestory.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github-issue-feedback":{"repo":"jyl/easy-javascript"},"github":{"url":"https://github.com/jyl/easy-javascript"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"alipay":"images/zhifubao.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"images/weixin.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"jyl","repo":"easy-javascript","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"全栈讲师-金云龙","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"EASYJAVASCRIPT - 可能是最适合你的 JavaScript 课程","language":"zh-hans","links":{"sidebar":{"作者的博客":"http://www.longestory.com"}},"gitbook":"*"},"file":{"path":"chapter4/primitive-type.md","mtime":"2018-01-11T13:26:16.259Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-12T03:53:21.187Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-issue-feedback/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
