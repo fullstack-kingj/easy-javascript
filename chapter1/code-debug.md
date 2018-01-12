@@ -13,6 +13,19 @@ console 用于提供控制台标准输出，它是由 Microsoft 公司的 JScrip
 | console.warn() | 向标准输出流打印警告性消息。输出文字外，会显示一个黄色的惊叹号 |
 | console.error() | 向标准输出流打印错误性消息。输出文字外，会显示一个红色的叉子 |
 
+如下示例代码，可在浏览器的开发者工具或者 Node.js 环境中运行:
+
+```javascript
+// 用于输出日志性消息
+console.log("这是一个log日志性消息.");
+// 用于输出信息性消息
+console.info("这是一个info信息性消息.");
+// 用于输出警告性消息
+console.warn("这是一个warn警告性消息.");
+// 用于输出错误性消息
+console.error("这是一个error错误性消息.");
+```
+
 ## Node.js 调试器
 
 基于 Chrome V8 引擎的 Node.js 解释器提供了一个强大的调试器，帮助开发人员调试应用程序。

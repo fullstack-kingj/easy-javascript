@@ -45,7 +45,7 @@ JScript 是 Microsoft 公司为 IE3 浏览器添加的脚本语言，也是 Java
 
 直到以 JavaScript 1.1 为草案提交给 ECMA（欧洲计算机制造商协会）定义了 ECMA 标准，这个问题才得以缓解。
 
-> 参考资料: [MSDN 提供的 JavaScript 语言参考](https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx)
+> 参考资料: [MSDN 提供的 JavaScript 语言参考](https://msdn.microsoft.com/zh-cn/library/d1et7k7c.aspx)
 
 ## 与 Java 的关系
 

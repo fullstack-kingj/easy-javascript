@@ -1,6 +1,6 @@
 # Summary
 
-* [关于](README.md)
+* [前言](README.md)
 * [第一章 JavaScript 是什么](JavaScript是什么.md)
     * [第一节 JavaScript 介绍](chapter1/javascript-summary.md)
     * [第二节 运行环境](chapter1/runtime-environment.md)
