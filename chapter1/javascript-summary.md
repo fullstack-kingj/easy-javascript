@@ -1,11 +1,11 @@
-JavaScript 是一门跨平台、面向对象的轻量级脚本语言，运行于 JavaScript 解释器/引擎。
+JavaScript 语言是一门跨平台、面向对象的轻量级脚本语言，运行于 JavaScript 解释器/引擎。
 
-JavaScript 内置了一个包含一系列对象的标准库，比如数组、日期、数学和一个语言元素集合包括操作符、流程控制及语句等内容。
+JavaScript 语言内置了一个包含一系列对象的标准库，比如数组、日期、数学和一个语言元素集合包括操作符、流程控制及语句等内容。
 
 JavaScript 解释器是作为 JavaScript 脚本代码的运行环境，如下述两种呈现方式:
 
-- 独立安装的JavaScript解释器。
-- 嵌入在浏览器内核中的JavaScript解释器。
+- 独立安装的 JavaScript 解释器。
+- 嵌入在浏览器内核中的 JavaScript 解释器。
 
 ## JavaScript 简史
 

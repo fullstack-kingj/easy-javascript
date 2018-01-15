@@ -34,8 +34,30 @@
 
 #### 2. 使用数据类型的转换函数进行类型转换。
 
-| 构造函数 | 描述 |
+| 函数 | 描述 |
 | --- | --- |
 | toString() | 将数字或布尔值转换为字符串 |
 | parseInt() | 将字符串或布尔值转换为整数类型 |
 | parseFloat() | 将字符串或布尔值转换为浮点类型 |
+
+> **注意:** 我们需要 parseInt() 函数和 parseFloat() 函数的区别。
+
+无论转换之前的数字是整数还是浮点数，parseInt() 函数只会得到整数部分。如下示例代码所示:
+
+```javascript
+var str1 = '100';
+var str2 = '100.11';
+
+console.log(parseInt(str1));// 100
+console.log(parseInt(str2));// 100
+```
+
+而 parseFloat() 函数则会根据实际情况而定。如果是整数，则得到的也是整数；如果是浮点数，则得到的也是浮点数。如下示例代码所示:
+
+```javascript
+var str1 = '100';
+var str2 = '100.11';
+
+console.log(parseFloat(str1));// 100
+console.log(parseFloat(str2));// 100.11
+```

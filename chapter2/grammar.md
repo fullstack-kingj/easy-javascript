@@ -36,6 +36,16 @@ var diff = a - b;// 有效的语句 —— 推荐
 
 > **注意:** 在 JavaScript 中，虽然语句结尾的分号不是必需的，但还是建议任何时候都不要省略。使用分号是一个非常好的编程习惯。
 
+如果将上述示例代码编写在一行的话，如下示例代码所示:
+
+```javascript
+var sum = a + bvar diff = a - b;
+```
+
+上述示例代码运行的结果是报错，具体报错信息如下图所示:
+
+![](images/03.png)
+
 ## 注释
 
 在编写 JavaScript 代码时，经常利用注释为代码添加说明。注释的内容会被 JavaScript 解释器/引擎忽略，JavaScript 支持两种格式的注释:
@@ -65,8 +75,18 @@ JavaScript 代码将多行组合成一个代码块，每个代码块一般是以
 ```javascript
 if(test){
 	test = false;
-	alert(test);
+	console.log(test);
 }
 ```
 
 > **注意:** 一般在执行多行代码时才需要语句块，但最好是始终都使用花括号将代码块进行包裹。
+
+在 JavaScript 代码中，如果独立编写一个语句的话，JavaScript 语法并不报错。如下示例代码所示:
+
+```javascript
+{
+    console.log(test);// 推荐使用
+}
+```
+
+但是，我们并不推荐这样使用。因为在 ECMAScript 5 版本中，并不存在块级作用域。
