@@ -1,26 +1,28 @@
-undefined 和 null 值都是 JavaScript 中的特殊类型。在实际开发中，这两个特殊类型也是经常出现错误的地方。尤其是 null 值。
+undefined 和 null 值都是 JavaScript 语言中的特殊类型。在实际开发中，这两个特殊类型也是经常出现错误的地方。尤其是 null 值。
 
 ## undefined
 
-JavaScript 中有两个表示空的数据类型，undefined 和 null，其中比较有用的是 undefined。
+JavaScript 语言中有两个表示空的数据类型，undefined 和 null，其中比较有用的是 undefined。
 
-undefined 类型只有一个值，就是 undefined。
+Undefined 类型中只有一个值，就是 undefined 值。
 
 下列情况会返回 undefined:
 
-- 访问未修改的变量 undefined。
-- 没有定义 return 表达式的函数隐式返回 undefined。
-- return 表达式没有显式的返回任何内容。
-- 访问不存在的属性。
-- 任何被设置为 undefined 值的变量。
+1. 只定义但未初始化的变量的值为 undefined
+2. 定义并初始化值为 undefined 的变量
+3. 函数中 return 语句的默认值为 undefined
+4. 函数中 return 语句设置值为 undefined
+5. 访问不存在的对象的属性，得到的结果为 undefined
+
+> **说明:** 上述得到 undefined 值的情况，我们会在相应的内容中讲解。
 
 ## null
 
-null 值是 JavaScript 中的一个特殊类型，用于表示一个不再指向任何内存空间地址的变量。
+null 值是 JavaScript 语言中的一个特殊类型，用于表示一个不再指向任何内存空间地址的变量。
 
-null 值多用于释放 JavaScript 中的资源（变量、数组和函数等）。
+null 值多用于释放 JavaScript 语言中的资源（变量、数组和函数等）。
 
-> **注意:** 使用 typeof 运算符计算 null 的话，返回的是 object。
+> **注意:** 使用 typeof 运算符计算 null 的话，返回的是 object。但 null 值并非 Object 类型。
 
 ```javascript
 var longestory = null;

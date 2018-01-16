@@ -8,31 +8,42 @@
 
 布尔（boolean）类型是指真或假、开或关、是或否。这个类型只有两个值：true 和 false。
 
-> **注意:**
-> 
-> - 由于 JavaScript 是区分大小写的，布尔类型的 true 和 false 全部是小写。
-> - JavaScript 也可以将其他类型的数据，自动转换为布尔类型。
+> **注意:** 由于 JavaScript 是区分大小写的，布尔类型的 true 和 false 全部是小写。
 
-如下表所示，其他类型转换成 boolean 类型的情况:
+JavaScript 也可以将其他类型的数据，自动转换为布尔类型。如下表所示，其他类型转换成 boolean 类型的情况:
 
 | 数据类型 | 转换为 true 值 | 转换为 false 值 |
 | --- | --- | --- |
 | boolean 类型 | true | false |
-| string 类型 | 任何非空字符串 | “”（空字符串）|
-| number 类型 | 任何非零数字值（包括无穷大）| 0 和 NaN |
+| string 类型 | 任何非空字符串 | ""（空字符串）|
+| number 类型 | 任何非零数字值（包括无穷大）| 0、0.0 和 NaN |
 | object 类型 | 任何对象 | null |
 | undefined | | undefined |
 
+我们可以通过如下示例代码所示，判断当前其他类型的变量自动转换为布尔类型后的情况:
+
+```javascript
+var v = 0;
+// 这里我们使用 if...else 语句判断当前变量值自动转换成 boolean 类型后的值
+if (v) {
+    console.log('true');
+} else {
+    console.log('false');
+}
+```
+
+其他类型转换成布尔类型虽然是固定的内容，也没有什么难度，但在实际开发中经常遇到自动转换的情况。
+
 ## number 类型
 
-number 类型是指数字，JavaScript 不区分整数类型和浮点类型。
+number 类型是指数字值，JavaScript 语言与其他编程语言不太一样的地方是 JavaScript 语言不区分整数类型和浮点类型。
 
 - 整数类型: 包括负整数、0 和正整数等。
 - 浮点类型: 表示小数。
 
 ### 浮点类型
 
-浮点类型，就是指该数值包含整数部分、小数点和小数部分。
+浮点类型，就是指该数值包含整数部分、小数点和小数部分的数字值。
 
 如下示例代码所示，展示了如何定义一个浮点型变量:
 
@@ -41,18 +52,16 @@ var floatNum1 = 0.1;
 var floatNum2 = .1;// 有效，但不推荐
 ```
 
-> **注意:**
-> 
-> - JavaScript 允许小数点前可以没有整数，但不推荐这种写法。
-> - 保存浮点类型需要的空间是保存整数类型的两倍。
-> - 如果小数点后面没有任何数字，那这个数值作为整数类型保存。
+> **说明:** JavaScript 允许小数点前可以没有整数，但不推荐这种写法。
 
-如下示例代码所示，展示了当小数点后没有任何数字，或数字为零时，该变量会作为整数类型保存:
+如果小数点后面没有任何数字，那这个数值作为整数类型保存。如下示例代码所示:
 
 ```javascript
 var floatNum3 = 1.;// 小数点后面没有数字 —— 解析为 1
 var floatNum4 = 10.0;// 整数 —— 解析为 10
 ```
+
+> **说明:** 保存浮点类型需要的空间是保存整数类型的两倍。
 
 ### 四舍五入误差
 
@@ -70,7 +79,10 @@ y = .1;// 值为true，.2-.1 等于 .1
 
 ### NaN
 
-NaN（Not a Number），即非数值，是一个特殊的数值。任何涉及 NaN 的操作都会返回 NaN。NaN 与任何值都不相等，包括 NaN 本身。
+NaN（Not a Number），即非数值，是一个特殊的数字值。其特殊的地方如下:
+
+1. 任何涉及 NaN 的操作都会返回 NaN。
+2. NaN 与任何值都不相等，包括 NaN 本身。
 
 针对上述特点，JavaScript 提供了 `isNaN()` 函数。该函数用于判断计算结果是否为数值。
 
@@ -86,11 +98,11 @@ console.log(isNaN(true));// 输出false（可以被转换成数值 1）
 string 类型用于表示由零或多个 16 位 Unicode 字符组成的字符序列，被称之为字符串。字符串可以由双引号（"）或单引号（'）表示。
 
 ```javascript
-var firstString = "Nicholas";
-var secondString = 'Zakas';
+var firstString = "www.longestory.com";
+var secondString = 'www.longestory.com';
 ```
 
-> **说明:** 在 JavaScript 语言中，使用双引号（""）或单引号（''）定义字符串是没有区别的。
+> **说明:** 在 JavaScript 语言中，使用双引号（""）或单引号（''）定义字符串是没有区别的。我们建议使用单引号（''）。
 
 string 类型包含一些特殊的转义字符，用于表示非打印字符。
 
@@ -107,10 +119,10 @@ string 类型包含一些特殊的转义字符，用于表示非打印字符。
 
 ## typeof 运算符
 
-由于 JavaScript 是弱类型/松散类型的，因此需要有一种手段来检测给定变量的数据类型。typeof 运算符就是负责提供这方面信息，如下述代码:
+由于 JavaScript 是弱类型/松散类型的，因此需要有一种手段来检测给定变量的数据类型。typeof 运算符就是负责提供这方面信息，如下示例代码所示:
 
 ```javascript
-var message = "this is message";
+var message = "www.longestory.com";
 console.log(typeof message);// 输出 string
 console.log(typeof(message));// 输出 string
 ```
