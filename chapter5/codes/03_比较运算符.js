@@ -1,3 +1,8 @@
+/* 相等与不等 */
+console.log(10 == 10);// true
+console.log(10 == '10');// true
+console.log(undefined == null);// true
+
 /* 全等与不全等 */
 var x = 10;
 var y = '10';
