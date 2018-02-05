@@ -1,10 +1,10 @@
 ![](images/cover.png)
 
-[在线阅读](http://www.longestory.com/easy-javascript/)
+[使用 GitBook 在线阅读本课程](http://www.longestory.com/easy-javascript/)
 
 ## 前言
 
-本套课程共分为 10 个章节，从基础的概念到具体的用法，一一详细的进行阐述。只为努力作为学习 JavaScript 技术的最好的自学基础课程。
+本套课程共分为 10 个章节，从基础的概念到具体的用法，逐一详细的进行阐述。目的就是努力成为最好的  JavaScript 自学课程。
 
 > **本套课程会一直更新，直到达到适合于所有人自学为止。**
 
